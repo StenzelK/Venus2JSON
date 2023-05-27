@@ -1,6 +1,6 @@
 # Venus Chatlog Recovery Tool
 
-Hi there! This tool is designed to help you recover your chatlogs from Venus. Whether you're a tech-savvy individual or a non-tech person, this guide will walk you through the process.
+Hi there! This tool is designed to help you recover your chatlogs from Venus. Whether you're a tech-savvy individual or a non-tech person, this guide will walk you through the process. Designed for Risu
 
 ## Tutorial for Tech People
 
@@ -21,6 +21,6 @@ Don't worry if you're not familiar with technical tasks. Just follow these simpl
 4. Double-click the `venus2json.bat` file and let the magic happen! The script will automatically convert your chatlogs to JSON format.
 5. On Risu, once you have imported your bot, in the bottom right you can find Chat List. You can import your chat there
 
-**Note**: Please be aware that this script assumes every even message is from the bot. If you encounter any issues or have specific requirements, please reach out to the developer. The script is released early to allow more people to move their chats before Sunday.
+**Note**: Please be aware that this script assumes every even message is from the bot. If you encounter any issues or have specific requirements, please reach out to the developer. The script is released early to allow more people to move their chats before the website shuts down.
 
 That's it! You're now ready to recover your Venus chatlogs using this tool. If you have any questions or need assistance, feel free to ask. Happy recovering!
