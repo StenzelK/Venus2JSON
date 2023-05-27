@@ -3,11 +3,14 @@ from bs4 import BeautifulSoup
 import json
 import os
 import re
+import colorama
+from colorama import Fore, Style
 
 def main():
 
 
-    print("Scanning for chat files....")
+    colorama.init(autoreset=True)
+    print(f"\n\n{Fore.GREEN}Scanning for chat files....")
     output_dir = "output"
 
     if not os.path.exists(output_dir):
@@ -56,7 +59,7 @@ def main():
 
             
         if name:
-            print(f"Converting chat with {name}...")
+            print(f"Converting chat with {Fore.CYAN}{name}{Style.RESET_ALL}...")
         else:
             print("Converting unknown chat...")
 
@@ -81,12 +84,12 @@ def main():
             json.dump(json_template, ff)
             
         if name:
-            print(f"Your chat with {name} has been converted")
+            print(f"Your chat with {Fore.CYAN}{name}{Style.RESET_ALL} has been converted")
         else:
             print("Your chat has been converted")
         
     
-    print("All possible chats have been converted. Say Hi to your waifu/husbando from me")
+    print(f"{Fore.GREEN}All possible chats have been converted. Say Hi to your waifu/husbando from me")
     
 if __name__ == '__main__':
     main()
