@@ -40,6 +40,7 @@ def main():
 
 
     for file in html_files:
+        json_template["data"]["message"] = []
 
         with open(file, "r") as f:
             content = f.read()
