@@ -33,7 +33,7 @@ def main():
     json_template = json.loads(json_tmp)
 
 
-    html_files = glob.glob("HTML_HERE/*.html")
+    html_files = glob.glob("HTML_HERE/*.html") + glob.glob("HTML_HERE/*.htm")
 
     soup_dict = {}
 
@@ -51,7 +51,7 @@ def main():
             print(f"{file} might not be from VenusAI")
             continue
         
-        match = re.search(r"with\s(.+)\.html", file)
+        match = re.search(r"with\s(.+)\.(html|htm)", file)
         if match:
             name = match.group(1)
         else:
@@ -77,7 +77,7 @@ def main():
             json_template["data"]["message"].append(msg)
             
         filename = os.path.basename(file)
-        file_json = filename.replace(".html", ".json")
+        file_json = filename.replace(".html", ".json").replace(".htm", ".json")
         output_path = os.path.join(output_dir, file_json)
         
         with open(output_path, "w") as ff:
