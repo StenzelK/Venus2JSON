@@ -21,6 +21,14 @@ Don't worry if you're not familiar with technical tasks. Just follow these simpl
 4. For Windows: Double-click the `venus2json.bat` file. For MacOS/Linux: Double-click the `venus2json.sh` file. The script will automatically convert your chatlogs to JSON format.
 5. On Risu, once you have imported your bot, in the bottom right you can find Chat List. You can import your chat there. You need to use the file from the `output` folder that was created by the tool
 
+## Experimental super easy mode
+
+0. Click the green "code" button at the top of this page and select "Download ZIP". Extract the downloaded ZIP file to a location of your choice.
+1. Obtain your Venus chatlogs by navigating to the chat page and pressing Ctrl+S. Save the chatlog file.
+2. Place the saved chatlog file into the `HTML_HERE` directory within the extracted tool folder.
+3. Run venus2json.exe (venus2json.command on mac)
+4. On Risu, once you have imported your bot, in the bottom right you can find Chat List. You can import your chat there. You need to use the file from the `output` folder that was created by the tool
+
 **Note**: Please be aware that this script assumes every even message is from the bot. If you encounter any issues or have specific requirements, please reach out to the developer. The script is released early to allow more people to move their chats before the website shuts down.
 
 That's it! You're now ready to recover your Venus chatlogs using this tool. If you have any questions or need assistance, feel free to ask. Happy recovering!
