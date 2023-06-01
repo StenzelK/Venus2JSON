@@ -41,7 +41,7 @@ def main():
     for file in html_files:
         json_template["data"]["message"] = []
 
-        with open(file, "r") as f:
+        with open(file, "r", encoding='utf8') as f:
             content = f.read()
 
         soup = BeautifulSoup(content, "html.parser")
